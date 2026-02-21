@@ -63,7 +63,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseDefaultFiles(); // Support index.html automatically
-app.UseStaticFiles();
+
+// Use standard static files with custom provider for robust MIME types
+var provider = new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider();
+provider.Mappings[".css"] = "text/css";
+provider.Mappings[".js"] = "application/javascript";
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    ContentTypeProvider = provider
+});
+
 app.UseAuthorization();
 
 app.MapControllers();
