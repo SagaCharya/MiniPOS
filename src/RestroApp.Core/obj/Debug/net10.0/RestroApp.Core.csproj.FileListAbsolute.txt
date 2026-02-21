@@ -1,0 +1,14 @@
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\bin\Debug\net10.0\RestroApp.Core.deps.json
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\bin\Debug\net10.0\RestroApp.Core.dll
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\bin\Debug\net10.0\RestroApp.Core.pdb
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\RestroApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\RestroApp.Core.AssemblyInfoInputs.cache
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\RestroApp.Core.AssemblyInfo.cs
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\RestroApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\RestroApp.Core.dll
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\refint\RestroApp.Core.dll
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\RestroApp.Core.pdb
+C:\Users\acer nitro\Desktop\restro_app\src\RestroApp.Core\obj\Debug\net10.0\ref\RestroApp.Core.dll
+C:\Users\acer nitro\Desktop\restro_app\build_out\RestroApp.Core.deps.json
+C:\Users\acer nitro\Desktop\restro_app\build_out\RestroApp.Core.dll
+C:\Users\acer nitro\Desktop\restro_app\build_out\RestroApp.Core.pdb

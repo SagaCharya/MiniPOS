@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+    --bg-cream: #fbf8f1;
+    --header-dark: #1a1f2e;
+    --accent-gold: #c48a12;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: #1a1f2e;
+}
