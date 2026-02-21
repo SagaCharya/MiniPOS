@@ -9,12 +9,16 @@ RUN npm run build
 # STAGE 2: Build Backend (.NET)
 FROM mcr.microsoft.com/dotnet/sdk:10.0-preview AS build-dotnet
 WORKDIR /src
-COPY ["src/RestroApp.Api/RestroApp.Api.csproj", "src/RestroApp.Api/"]
-COPY ["src/RestroApp.Core/RestroApp.Core.csproj", "src/RestroApp.Core/"]
-COPY ["src/RestroApp.Infrastructure/RestroApp.Infrastructure.csproj", "src/RestroApp.Infrastructure/"]
-RUN dotnet restore "src/RestroApp.Api/RestroApp.Api.csproj"
+# Copy project files first for efficient caching
+COPY ["src/RestroApp.Api/RestroApp.Api.csproj", "RestroApp.Api/"]
+COPY ["src/RestroApp.Core/RestroApp.Core.csproj", "RestroApp.Core/"]
+COPY ["src/RestroApp.Infrastructure/RestroApp.Infrastructure.csproj", "RestroApp.Infrastructure/"]
+RUN dotnet restore "RestroApp.Api/RestroApp.Api.csproj"
+
+# Copy the rest of the source code
 COPY src/ ./
-RUN dotnet publish "src/RestroApp.Api/RestroApp.Api.csproj" -c Release -o /app/publish
+# Note: Now files are at /src/RestroApp.Api/ etc.
+RUN dotnet publish "RestroApp.Api/RestroApp.Api.csproj" -c Release -o /app/publish
 
 # STAGE 3: Final Image
 FROM mcr.microsoft.com/dotnet/aspnet:10.0-preview AS final
